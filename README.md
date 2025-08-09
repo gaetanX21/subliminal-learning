@@ -1,4 +1,4 @@
-# MNIST Classification Project
+# Subliminal Learning on MNIST
 
 This repository contains code to run subliminal learning experiments on the MNIST dataset. It includes functionalities for loading data, defining models, training them, and visualizing results. The project is structured to facilitate easy experimentation with different configurations and parameters.
 
@@ -19,7 +19,7 @@ This repository contains code to run subliminal learning experiments on the MNIS
 
 1. **Clone the repository:**
    ```bash
-   git clone <repo-url>
+   git clone https://github.com/gaetanX21/subliminal-learning.git
    cd sl
    ```
 2. **Install dependencies:**

@@ -1,8 +1,9 @@
 import matplotlib.pyplot as plt
 import pandas as pd
+
 from constants import FIGURES_DIR, RESULTS_DIR
 
-plt.rcParams["figure.dpi"] = 200  # higher resolution
+plt.xkcd()
 
 
 def main() -> None:
@@ -19,7 +20,7 @@ def main() -> None:
     labels = [
         "reference",
         "teacher",
-        "student train",
+        "student MNIST",
         "student random",
     ]
     plt.figure(figsize=(12, 8))
@@ -32,7 +33,7 @@ def main() -> None:
     plt.xscale("log")
     plt.ylabel("Validation Accuracy on regular MNIST Classification")
     plt.legend()
-    plt.savefig(FIGURES_DIR / "accuracy_plot.png")
+    plt.savefig(FIGURES_DIR / "accuracy.png")
 
     # 2. Plot entropy of teacher logits
     labels = [
@@ -52,7 +53,7 @@ def main() -> None:
     plt.xscale("log")
     plt.legend()
     plt.show()
-    plt.savefig(FIGURES_DIR / "entropy_plot.png")
+    plt.savefig(FIGURES_DIR / "entropy.png")
     print(f"Plots saved to {FIGURES_DIR}")
 
 
